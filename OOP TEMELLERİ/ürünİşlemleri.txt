@@ -1,0 +1,25 @@
+refactoring- projede iyileştirme
+layout:sayfa değişsede sabit kalan alan.
+----------------------------------------------------------------------------------
+div:Bölüm oluşturmak için.
+RenderBody:Bu sayfada Layout dışında kalan alan burası.Layout a bağlı olarak sayfa
+çalıştıracaksan değerler buraya gelecek.
+----------------------------------------------------------------------------------
+verileri çekmek için 2 komuta ihtiyaç var.
+1. verilerin çekileceği entityin çağrılması gerekiyor.
+2.
+ekleme silme gibi komutlar model olarak çekilecek.
+
+--------------------------------------------------------
+ürün eklemede 2 metota ihtiyac var 
+1.si sayfa yüklendiği zaman çalışacak
+2.si ekle butonuna tıkladığım zaman çalışacak.
+[HttpGet]:metodun sayfa yüklendiği zaman çalışmasını istiyorum anlamına geliyor.
+aynı sayfada aynı adda metot kullanacaksan parametreleri farklı olmalı. override(aşırı yükleme)
+---------------------------------------------------------------------------------
+silme işlemi için ilk önce silinecek verinin id sinin alınması gerekiyor.
+FirstOrDefault:sadece bir değeri hafızaya almak için kullanılan metod.
+------------------------------------------------------------------------------------
+güncelleme işlemi: httpget,httppost işlemleri var.
+güncellenecek değerler sayfaya taşınacak.daha sonra güncellenecek
+

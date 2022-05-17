@@ -1,0 +1,13 @@
+tabloda ilk satır oluşturulur. Başlık için
+daha sonra sütünlara ayrılır. Başlıklar yazılır.
+satırlar oluşturulur. Veriler girilir.
+th=table head kalın punto
+td=table data normal punto
+----------------------------------------------------------------------------
+solution explorer - wwwroot -- lib -- boostrap --dist -- css -- boostrap.css
+// tablo görüntüsü sınıfının aktifleşmesi için
+----------------------------------------------------------------------------
+controller kısmı hiyerarşik gidiyor. Önce olan kod ilk çalışır.
+----------------------------------------------------------------------------
+kalıtım: bir sınıfa ait özellikleri başka sınıfda da kullanmaya yarıyor.
+

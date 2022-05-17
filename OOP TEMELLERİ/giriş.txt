@@ -1,0 +1,53 @@
+METOT--> İşleri tekrardan kurtarmak için kullanılan yapılar.
+	1-- Geriye Deger döndürmeyen
+	2-- Geirye Deger Döndüren
+*Sağ tarafında parantez olur
+int sayi; -->değişken
+int sayi() -->metot
+*Mor renkli küple anılıyor.
+
+-ürün listesi
+-müşteri listesi
+-kategori
+
+-sql db
+	1 veritabanı
+	3 tablo
+ code first
+
+-------------------------------------------------------------------------
+Entity: Projedeki tabloları ve bu tabloların içinde yer alan sütunları tutacak alandır.
+-ürün		       -Kategori			-Müşteri
+	ürünId			KategoriId			Id
+	ürünAd			KategoriAd			Ad
+	stok							Şehir
+	fiyat	
+ 
+--------------------------------------------------------------------------------------------
+C# da sınıf olarak tutulanlar SQL de tablo olarak tutulacak -- product class --> product table
+c# da property olarak tutulanlar SQL de Column sütuna dönüşüyor.
+--------------------------------------------------------------------------------------
+Entity framerwork da veritabanları genel olarak 2 başlıkta inceleniyor.
+- DbFirst:Önceden hazırlanan bir veritabanı var.Veritabanı model üzerinden projenin
+içerisine dahil ediliyor.
+- CodeFirst:Önceden hazırlanan veritabanı yok. Sql sadece depolama ve barındırma alanı olarak 
+kullanılacak. Bütün işler tamamen visual studio da yönetilecek.
+Bunu Kullanacağız.
+---------------------------------------------------------------------------------------------
+ASP.NET Core MVC
+-Model
+-Controller:backend
+-View:tasarım
+---------------------------------------------------------------------------------------
+erişim belirleyici : public , private
+--------------------------------------------
+html tarafında c# kodları kullanılacaksa @ sembolü ile kullanmamız gerekiyor.
+----------------------------------------------------------------------------------------
+geriye değer döndüren metot:geriye 1 şey döndür.
+-----------------------------------------------------------------------
+ödev: faktörüyeli metotla tanımla
+----------------------------------------------------
+parametreler geri deger döndürende de kullanılabilir, geriye değer döndürmeyende
+de kullanılabilir.
+--------------------------------------------------------------------------------
+

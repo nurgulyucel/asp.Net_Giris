@@ -1,0 +1,36 @@
+﻿@using OOP_Temelleri_1.Entity
+@model List<Product>
+@{
+    ViewData["Title"] = "Index";
+    Layout = "~/Views/Shared/_CoreLayout.cshtml";
+}
+
+<h1>Ürün Sayfası</h1>
+<!--Ürün sayfasına tablo yapısı eklenecek.-->
+<table class="table table-bordered">
+    <tr>
+        <th>#</th>
+        <th>Ürün Adı </th>
+        <th>Fiyat</th>
+        <th>Stok</th>
+        <th>Sil</th>
+        <th>Güncelle</th>
+    </tr>
+    @foreach (var item in Model)
+    {
+        <!--Modelden item isminde bir değişken kullanarak 
+            verileri üzerine alacak. -->
+        <tr>
+            <td>@item.ProductId</td>
+            <td>@item.ProductName</td>
+            <td>@item.ProductPrice</td>
+            <td>@item.stok</td>
+            <td><a href="/ProductController1/DeleteProduct/@item.ProductId" class="btn btn-danger">Sil</a></td>
+            <td><a href="/ProductController1/UpdateProduct/@item.ProductId" class="btn btn-success">Güncelle</a></td>
+        </tr>
+
+    }
+</table>
+<a href="/ProductController1/AddProduct" class="btn btn-primary">Yeni Ürün Girişi</a>
+
+

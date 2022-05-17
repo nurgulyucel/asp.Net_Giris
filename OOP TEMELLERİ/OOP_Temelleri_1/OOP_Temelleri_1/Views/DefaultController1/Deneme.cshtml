@@ -1,0 +1,38 @@
+﻿
+@{
+    Layout = null;
+}
+
+<!-- 
+    solution explorer - wwwroot -- lib -- boostrap --
+    dist -- css -- boostrap.css
+    -->
+<link href="~/lib/bootstrap/dist/css/bootstrap.css" rel="stylesheet" />
+<h1>Burası Şehir Paneli</h1> 
+
+<table class="table table-bordered"> <!-- Tablo oluşturdum.-->
+    <tr> <!-- en üstteki satırı oluşturdum-->
+        <th>#</th> <!-- Birinci satırın sütünları oluşturuluyor.-->
+        <th>Ülke</th>
+        <th>Şehir</th>
+        <th>Nüfus</th>
+        <th>Bayrak</th>
+    </tr>
+    <tr>
+        <td>@ViewBag.f2</td>
+        <td>@ViewBag.f4</td>
+        <td>@ViewBag.f1</td>
+        <td>@ViewBag.f3</td>
+        <td>@ViewBag.f5-@ViewBag.f6</td>
+    </tr>
+    <tr>
+        <td>@ViewBag.z2</td>
+        <td>@ViewBag.z4</td>
+        <td>@ViewBag.z1</td>
+        <td>@ViewBag.z3</td>
+        <td>@ViewBag.z5-@ViewBag.z6</td>
+
+    </tr>
+
+</table>
+<a href="/DefaultController1/Urunler/" class="btn btn-info">Ürünlere Git</a>
